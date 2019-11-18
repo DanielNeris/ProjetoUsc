@@ -12,7 +12,9 @@ export default function Question({ data }) {
       <List
         data={data.options}
         keyExtractor={item => String(item)}
-        renderItem={({ item }) => <Answer onPress={() => setAnswer(item)} title={item} />}
+        renderItem={({ item }) => (
+          <Answer onPress={() => setAnswer(item)} title={item} />
+        )}
       />
     </>
   );

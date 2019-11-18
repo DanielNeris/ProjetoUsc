@@ -6,21 +6,21 @@ import Background from '~/components/Background';
 
 import { Container, Title } from './styles';
 
-export default function Home() {
+export default function About() {
   return (
     <Background>
       <ScrollView>
         <Container>
-          <Title>Home</Title>
+          <Title>CRÉDITOS</Title>
         </Container>
       </ScrollView>
     </Background>
   );
 }
 
-Home.navigationOptions = {
-  tabBarLabel: 'Home',
+About.navigationOptions = {
+  tabBarLabel: 'CRÉDITOS',
   tabBarIcon: ({ tintColor }) => (
-    <Icon name="dashboard" size={20} color={tintColor} />
+    <Icon name="school" size={20} color={tintColor} />
   ),
 };

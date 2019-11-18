@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  createAppContainer,
-  createSwitchNavigator,
-  createStackNavigator,
-} from 'react-navigation';
+import { createAppContainer } from 'react-navigation';
 
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 
@@ -11,20 +7,24 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import Home from './pages/Home';
 import Quiz from './pages/Quiz';
+import About from './pages/About';
 
 export default createAppContainer(
-  createBottomTabNavigator({
-    Home,
-    Quiz,
-  },
-  {
-    tabBarOptions: {
-      keyboardHidesTabBar: true,
-      activeTintColor: '#FFF',
-      inactiveTintColor: 'rgba(255,255,255, 0.6)',
-      style: {
-        backgroundColor: '#006400'
-      }
-    }
-  })
+  createBottomTabNavigator(
+    {
+      Home,
+      Quiz,
+      About,
+    },
+    {
+      tabBarOptions: {
+        keyboardHidesTabBar: true,
+        activeTintColor: '#FFF',
+        inactiveTintColor: 'rgba(255,255,255, 0.6)',
+        style: {
+          backgroundColor: '#006400',
+        },
+      },
+    },
+  ),
 );

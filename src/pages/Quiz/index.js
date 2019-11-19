@@ -2,7 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 // import { Form, Input } from '@rocketseat/unform';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { Alert, FlatList, Text, ScrollView } from 'react-native';
+import {
+  Alert,
+  FlatList,
+  Text,
+  ScrollView,
+  View,
+  SafeAreaView,
+} from 'react-native';
 
 import Background from '~/components/Background';
 // import Quenstion from '~/components/Question';
@@ -33,6 +40,7 @@ export default function Quiz({ navigation }) {
   const [options, setOptions] = useState([]);
   const [len, setLen] = useState(1);
   const [currentQuestion, setCurrentQuestion] = useState(1);
+  const [enableScrollViewScroll, setEnableScrollViewScroll] = useState(false);
 
   function handleSubmit() {
     if (answer === '') {
@@ -220,7 +228,7 @@ export default function Quiz({ navigation }) {
 
   return (
     <Background>
-      <ScrollView style={{ flex: 1 }}>
+      <SafeAreaView style={{ flex: 1 }}>
         <Container>
           <Title>QUIZ</Title>
           {currentQuestion <= len || len === 1 ? (
@@ -232,17 +240,22 @@ export default function Quiz({ navigation }) {
                 <QuestionTitle>{question.question}</QuestionTitle>
               </Question>
 
-              <FlatList
-                data={options}
-                keyExtractor={item => String(item)}
-                renderItem={({ item }) => (
-                  <Answer
-                    check={answerCheckd}
-                    onPress={() => handleAnswer(item)}>
-                    {item}
-                  </Answer>
-                )}
-              />
+              <View
+                onStartShouldSetResponderCapture={() => {
+                  setEnableScrollViewScroll(true);
+                }}>
+                <FlatList
+                  data={options}
+                  keyExtractor={item => String(item)}
+                  renderItem={({ item }) => (
+                    <Answer
+                      check={answerCheckd}
+                      onPress={() => handleAnswer(item)}>
+                      {item}
+                    </Answer>
+                  )}
+                />
+              </View>
 
               <SubmitButton onPress={handleSubmit}>
                 <Icon name="send" size={20} color="#fff" />
@@ -262,7 +275,7 @@ export default function Quiz({ navigation }) {
             </>
           )}
         </Container>
-      </ScrollView>
+      </SafeAreaView>
     </Background>
   );
 }

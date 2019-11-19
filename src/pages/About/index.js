@@ -4,7 +4,7 @@ import { ScrollView } from 'react-native';
 
 import Background from '~/components/Background';
 
-import { Container, Title } from './styles';
+import { Container, Title, Card, CardTitle, CardText } from './styles';
 
 export default function About() {
   return (
@@ -12,6 +12,32 @@ export default function About() {
       <ScrollView>
         <Container>
           <Title>CRÉDITOS</Title>
+
+          <Card>
+            <CardTitle>Integrantes:</CardTitle>
+
+            <CardText>Daniel de Souza Neris</CardText>
+            <CardText>Nathan Silva Barbosa</CardText>
+            <CardText>Marcus Vinicius</CardText>
+          </Card>
+
+          <Card>
+            <CardTitle>Curso:</CardTitle>
+
+            <CardText>Ciência da Computação</CardText>
+          </Card>
+
+          <Card>
+            <CardTitle>Disciplina:</CardTitle>
+
+            <CardText>Programação de Computadores</CardText>
+          </Card>
+
+          <Card>
+            <CardTitle>Professor:</CardTitle>
+
+            <CardText>Prof. Dr. Elvio Gilberto da Silva</CardText>
+          </Card>
         </Container>
       </ScrollView>
     </Background>

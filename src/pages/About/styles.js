@@ -11,3 +11,25 @@ export const Title = styled.Text`
   align-self: center;
   margin-top: 30px;
 `;
+
+export const Card = styled.View`
+  background: #fff;
+  padding: 10px;
+  margin: 0 10%;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+`;
+
+export const CardTitle = styled.Text`
+  font-size: 20px;
+  font-weight: bold;
+  align-self: center;
+  margin-bottom: 10px;
+`;
+
+export const CardText = styled.Text`
+  font-size: 20px;
+  align-self: center;
+`;

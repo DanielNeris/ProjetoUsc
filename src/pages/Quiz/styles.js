@@ -1,11 +1,11 @@
 import styled from 'styled-components/native';
 
+import Input from '~/components/Input';
+import Button from '~/components/Button';
+
 export const Container = styled.SafeAreaView`
   flex: 1;
 `;
-
-import Input from '~/components/Input';
-import Button from '~/components/Button';
 
 export const Title = styled.Text`
   font-size: 20px;
@@ -59,15 +59,13 @@ export const Question = styled.View`
 
 export const QuestionTitle = styled.Text`
   color: #000;
-`
+`;
 
 export const Response = styled.View`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-`
+`;
 
-export const Score = styled.Text`
-
-`
+export const Score = styled.Text``;

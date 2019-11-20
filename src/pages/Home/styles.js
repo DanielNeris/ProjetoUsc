@@ -13,13 +13,24 @@ export const Title = styled.Text`
 `;
 
 export const Card = styled.View`
-  margin-bottom: 15px;
-  padding: 20px;
-  border-radius: 4px;
   background: #fff;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  opacity: ${props => (props.past ? 0.6 : 1)};
+  padding: 10px;
+  margin: 0 10%;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+`;
+
+export const CardTitle = styled.Text`
+  font-size: 20px;
+  font-weight: bold;
+  align-self: center;
+  margin-bottom: 10px;
+`;
+
+export const CardText = styled.Text`
+  font-size: 15px;
+  align-self: center;
+  padding-bottom: 15px;
 `;

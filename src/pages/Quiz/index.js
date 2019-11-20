@@ -98,6 +98,7 @@ export default function Quiz({ navigation }) {
                 renderItem={({ item }) => (
                   <Answer
                     check={answerCheckd}
+                    color="#000"
                     onPress={() => handleAnswer(item)}>
                     {item}
                   </Answer>

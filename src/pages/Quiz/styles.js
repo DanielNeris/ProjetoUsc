@@ -40,10 +40,12 @@ export const Answer = styled(Button)`
   height: 65px;
   margin-top: 5px;
   border-radius: 4px;
-  background: ${props => (props.check ? '#fff' : '#8FBC8F')};
+  background: #fff;
+  /* background: ${props => (props.check ? '#fff' : '#8FBC8F')}; */
   width: 80%;
   margin: 0 10%;
   margin-bottom: 2%;
+  color: #000
 `;
 
 export const Question = styled.View`
@@ -57,7 +59,7 @@ export const Question = styled.View`
 
   align-items: center;
   justify-content: center;
-  opacity: ${props => (props.past ? 0.6 : 1)};
+  /* opacity: ${props => (props.past ? 0.6 : 1)}; */
 `;
 
 export const QuestionTitle = styled.Text`

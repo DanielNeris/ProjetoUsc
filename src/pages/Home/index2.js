@@ -11,26 +11,27 @@ export default function Home() {
     <Background>
       <ScrollView>
         <Container>
-          <Title>O que é sustentabilidade?</Title>
+          <Title>Sustentabilidade Ambiental</Title>
 
           <Card>
             {/* <CardTitle>O que é sustentabilidade? </CardTitle> */}
 
             <CardText>
               {' '}
-              - Sustentabilidade é a capacidade de sustentação ou conservação de
-              um processo ou sistema.
+              - A Sustentabilidade ambiental abrange a conservação e a
+              manutenção do meio ambiente.
             </CardText>
             <CardText>
               {' '}
-              - A palavra sustentável deriva do latim sustentare e signiﬁca
-              sustentar, apoiar, conservar e cuidar.
+              - Importante notar que, para que a sustentabilidade ambiental seja
+              efetivada, as pessoas devem estar em harmonia com o meio ambiente,
+              para obterem melhoria na qualidade de vida.
             </CardText>
             <CardText>
               {' '}
-              - O conceito de sustentabilidade aborda a maneira como se deve
-              agir em relação à natureza. Além disso, ele pode ser aplicado
-              desde uma comunidade até todo o planeta.
+              - O objetivo da sustentabilidade ambiental é que os interesses das
+              gerações futuras não estejam comprometidos pela satisfação das
+              necessidades da geração atual.
             </CardText>
           </Card>
         </Container>
@@ -40,7 +41,7 @@ export default function Home() {
 }
 
 Home.navigationOptions = {
-  drawerLabel: 'O que é?',
+  drawerLabel: 'Sustentabilidade Ambiental',
   drawerIcon: ({ tintColor }) => (
     <Icon name="dashboard" size={20} color={tintColor} />
   ),

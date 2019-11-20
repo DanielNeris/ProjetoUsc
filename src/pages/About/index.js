@@ -18,7 +18,7 @@ export default function About() {
 
             <CardText>Daniel de Souza Neris</CardText>
             <CardText>Nathan Silva Barbosa</CardText>
-            <CardText>Marcus Vinicius</CardText>
+            <CardText>Marcus Vinicius dos Santos</CardText>
           </Card>
 
           <Card>

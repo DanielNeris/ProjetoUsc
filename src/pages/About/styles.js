@@ -30,6 +30,6 @@ export const CardTitle = styled.Text`
 `;
 
 export const CardText = styled.Text`
-  font-size: 20px;
+  font-size: 15px;
   align-self: center;
 `;

@@ -22,7 +22,7 @@ export const List = styled.FlatList.attrs({
 
 export const Form = styled.View`
   align-self: stretch;
-  margin-top: 50px;
+  margin-top: 10px;
 `;
 
 export const FormInput = styled(Input)`
@@ -36,16 +36,19 @@ export const SubmitButton = styled(Button)`
 `;
 
 export const Answer = styled(Button)`
-  padding: 10px;
-  height: 60px;
+  padding: 10px 15px;
+  height: 65px;
   margin-top: 5px;
   border-radius: 4px;
   background: ${props => (props.check ? '#fff' : '#8FBC8F')};
+  width: 80%;
+  margin: 0 10%;
+  margin-bottom: 2%;
 `;
 
 export const Question = styled.View`
-  width: 335px;
-  margin: 0 30px;
+  width: 80%;
+  margin: 0 10%;
   margin-bottom: 15px;
   padding: 20px;
   border-radius: 4px;
@@ -58,6 +61,8 @@ export const Question = styled.View`
 `;
 
 export const QuestionTitle = styled.Text`
+  font-size: 15px;
+  font-weight: bold;
   color: #000;
 `;
 

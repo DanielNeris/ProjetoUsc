@@ -43,6 +43,6 @@ export default function Home() {
 Home.navigationOptions = {
   drawerLabel: 'Sustentabilidade Ambiental',
   drawerIcon: ({ tintColor }) => (
-    <Icon name="dashboard" size={20} color={tintColor} />
+    <Icon name="pageview" size={20} color={tintColor} />
   ),
 };

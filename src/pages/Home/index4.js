@@ -55,6 +55,6 @@ export default function Home() {
 Home.navigationOptions = {
   drawerLabel: 'Os 3 RS',
   drawerIcon: ({ tintColor }) => (
-    <Icon name="dashboard" size={20} color={tintColor} />
+    <Icon name="pageview" size={20} color={tintColor} />
   ),
 };

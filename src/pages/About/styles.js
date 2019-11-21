@@ -4,6 +4,10 @@ export const Container = styled.SafeAreaView`
   flex: 1;
 `;
 
+export const TTT = styled.SafeAreaView`
+  flex: 1;
+`;
+
 export const Title = styled.Text`
   font-size: 20px;
   color: #fff;

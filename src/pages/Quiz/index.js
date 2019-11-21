@@ -19,6 +19,7 @@ import {
   Answer,
   Response,
   Score,
+  TTT,
 } from './styles';
 
 import response from '~/config/data';
@@ -119,6 +120,11 @@ export default function Quiz({ navigation }) {
               <Response>
                 <Score>Pontuação: {score}</Score>
               </Response>
+
+              {score > 7 && <TTT>ótima tentativa!</TTT>}
+              {score > 5 && score < 7 && <TTT>Quase lá!</TTT>}
+              {score < 5 && <TTT>Continue tentando!</TTT>}
+
               <SubmitButton onPress={handleReset}>
                 Recomeçar
                 {/* <Icon name="restore" size={20} color="#fff" /> */}

@@ -5,6 +5,8 @@ import Button from '~/components/Button';
 
 export const Container = styled.SafeAreaView`
   flex: 1;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Title = styled.Text`
@@ -45,7 +47,7 @@ export const Answer = styled(Button)`
   width: 80%;
   margin: 0 10%;
   margin-bottom: 2%;
-  color: #000
+  color: #000;
 `;
 
 export const Question = styled.View`
@@ -75,4 +77,14 @@ export const Response = styled.View`
   justify-content: center;
 `;
 
-export const Score = styled.Text``;
+export const Score = styled.Text`
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 5px;
+`;
+
+export const TTT = styled.Text`
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 0;
+`;
